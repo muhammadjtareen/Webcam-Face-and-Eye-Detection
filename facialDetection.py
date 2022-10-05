@@ -3,6 +3,7 @@ import numpy as np
 
 cap = cv2.VideoCapture(0) #accesses camera
 
+#I will be using a pre-trained haarcascade to be able to detect faces and eyes
 face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
 eye_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_eye.xml')
 
